@@ -4,11 +4,13 @@ from enum import Enum
 from Booking import Booking
 
 
+# Created an enum for the customer category.
 class UserType(Enum):
     general = 'general'
     vip = 'vip'
 
 
+# Created an enum for the vehicle category.
 class VehicleType(Enum):
     sedan = 'sedan'
     suv = 'suv'
@@ -22,13 +24,13 @@ class RentalSystem:
         sedan_1 = Car('Audi A4', 160, True, '', VehicleType.sedan.name)
         sedan_2 = Car('Mercedes C220', 200, True, '', VehicleType.sedan.name)
         sedan_3 = Car('Jaguar XF', 150, True, '', VehicleType.sedan.name)
-        suv_1 = Car('Audi Q3', 300, True, '', VehicleType.suv)
-        suv_2 = Car('Ford Ecosport', 280, True, '', VehicleType.suv)
-        suv_3 = Car('Bmw X1', 340, True, '', VehicleType.suv)
-        suv_4 = Car('Bmw X5', 450, True, '', VehicleType.suv)
-        hatchback_1 = Car('swift', 100, True, '', VehicleType.hatchback)
-        hatchback_2 = Car('alto', 80, True, '', VehicleType.hatchback)
-        hatchback_3 = Car('civic', 120, True, '', VehicleType.hatchback)
+        suv_1 = Car('Audi Q3', 300, True, '', VehicleType.suv.name)
+        suv_2 = Car('Ford Ecosport', 280, True, '', VehicleType.suv.name)
+        suv_3 = Car('Bmw X1', 340, True, '', VehicleType.suv.name)
+        suv_4 = Car('Bmw X5', 450, True, '', VehicleType.suv.name)
+        hatchback_1 = Car('swift', 100, True, '', VehicleType.hatchback.name)
+        hatchback_2 = Car('alto', 80, True, '', VehicleType.hatchback.name)
+        hatchback_3 = Car('civic', 120, True, '', VehicleType.hatchback.name)
         self.sedan = [sedan_1, sedan_2, sedan_3]
         self.suv = [suv_1, suv_2, suv_3, suv_4]
         self.hatchback = [hatchback_1, hatchback_2, hatchback_3]

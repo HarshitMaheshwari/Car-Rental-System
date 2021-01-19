@@ -11,7 +11,8 @@ class Car:
         self.assigned_customer = assigned_customer
         self.group_id = group_id
 
-        x = random.randrange(0, 999)
+        x = random.randrange(0, 999)    # This generates random car numbers every time. It is used to give more
+                                        # realistic feel to the system.
         car_id = ("car{x}".format(x=x))
         self.car_id = car_id
 

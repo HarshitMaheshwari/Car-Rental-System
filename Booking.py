@@ -12,7 +12,8 @@ class Booking:
         self.booking_end_date = datetime
         self.total_price = 0
 
-# This method is used to validate the entered booking date by the user.
+# This method is used to validate the entered booking date by the user. A parameter min_date is used which does not
+    # allow the customer to write previous dates.
     def valid_booking_date(self, min_date):
         try:
             input_date = input('Date (dd/mm/yyyy): ')
