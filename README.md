@@ -1,5 +1,5 @@
 
-Steps to run the Car Rental System:
+Steps to run the Code:
 
 1.	 Before running the code, it is important understand the following points:
 a.	Install all the necessary libraries used in this program. Libraries used are: datetime, random and unittest.
